@@ -1,3 +1,5 @@
 #!/bin/bash
-wget -P /tmp/ https://raw.https://github.com/Fadeilou/alx-low_level_programming/blob/main/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD =/tmp/nrandom.so
+
+echo -e '#include <stdlib.h>\n#include <time.h>\n#include <unistd.h>\n__attribute__((constructor)) void init(void) { srand(time(NULL) + getpid()); }\nint rand(void) { return 9; }' > /tmp/rand.c
+gcc -Wall -fPIC -shared -o /tmp/rand.so /tmp/rand.c
+export LD_PRELOAD=/tmp/rand.so
