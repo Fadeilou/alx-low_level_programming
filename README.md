@@ -80,7 +80,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **Pericles Adjovi** <[Pericles001](https://github.com/Pericles001)>
+* **Fadeilou ALASSANE** <[Fadeilou](https://github.com/Fadeilou)>
 
 ## Aknowledgements
 
